@@ -1,0 +1,413 @@
+:root { 
+    --grey: #4E4E4E; 
+    --full-white: #FFFFFF; 
+    --quasi-white: #F1F1F1;  
+
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none; 
+}
+
+html {
+    scroll-behavior: smooth;
+    font-family: Roboto, sans-serif;
+}
+
+p {
+    word-wrap: break-word; 
+}
+
+
+.container { 
+    width: 96%; 
+    margin: 0 auto;  
+}
+
+
+.offer-section, .about-section { 
+    padding-top: 60px; 
+    padding-bottom: 50px; 
+}
+
+.main-title {
+    margin-bottom: 60px; 
+}
+
+
+
+.navbar {
+    width: 100vw; 
+    height: 50px; 
+    background-color: var(--grey);
+}
+
+.links-container .navbar-link, .break{
+    display: none;  
+}
+
+.navbar-container {
+    display: flex; 
+    justify-content: space-between;
+    height: 100%;
+    align-items: center;
+}
+
+.logo-company {
+    font-size: 16px; 
+    color: var(--full-white); 
+    font-weight: 700;
+ }
+ 
+
+ .header-section {
+    background-image: url("./images/bgpic.jpeg");
+    height: 100vh; 
+    width: 100vw;
+    position: relative; 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.shadow { 
+    height: 100vh; 
+    width: 100vw; 
+    background-color: rgba(0, 0, 0, 0.15);
+}
+
+.introduction-text { 
+    position: relative;
+    top: 23%; 
+}
+
+.intro1 { 
+    font-size: 36px; 
+    color: var(--full-white); 
+    margin-bottom: 35px;  
+}
+
+.intro2 {
+    font-size: 18px; 
+    font-weight: 700; 
+    color: var(--full-white);
+    margin-bottom: 40px; 
+}
+
+.btn { 
+    font-size: 18px; 
+    font-weight: 700; 
+    border: 3px solid var(--full-white);
+    background-color: transparent;
+    color: var(--full-white);
+    padding: 8px 57px; 
+    transition-duration: 1s; 
+}
+
+.about-section { 
+    background-color: var(--quasi-white); 
+    width: 100vw; 
+}
+
+.specialist-title {
+    font-size: 36px; 
+    font-weight: 700;  
+    color: #152D41; 
+    text-align: center;
+}
+
+.specialist-photo { 
+    background-image: url("./images/bernese.png");
+    border-radius: 50%;
+    height: 180px;
+    width: 180px;
+    min-width: 180px;
+    background-size: cover; 
+}
+
+.container .specialist-box {
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    padding: 0px;
+}
+
+.name-surname { 
+    font-weight: 400 bold;
+    font-size: 18px; 
+    margin-bottom: 15px; 
+    margin-top: 40px;
+}
+
+.about-specialist { 
+    font-size: 18px; 
+    font-weight: 400; 
+    text-align: justify;
+}
+
+div.specialist-box:not(:last-child) .about-specialist {
+    margin-bottom: 50px; 
+}
+
+.company-offer {
+    font-size: 1.6rem; 
+    font-weight: 700; 
+    color: var(--full-white); 
+    text-align: center;
+}
+
+.offer-section {
+    background-color: #405D78; 
+    position: relative; 
+    width: 100vw;   
+}
+
+.flex-row {
+    display: flex; 
+    justify-content: center; 
+    align-items: center;  
+    flex-direction: column;
+    flex-wrap: wrap; 
+    gap: 40px;    
+}
+
+.offer-box {
+    background-color: var(--quasi-white); 
+    width: 80vw; 
+    max-width: 338px; 
+    max-height: 331px; 
+    height: auto;
+    display: flex;
+	justify-content: center;
+	align-items: center;
+    transition-duration: 0.5s; 
+    aspect-ratio: 1/1;
+}
+
+.offer-box1 {
+    position: relative; 
+}
+
+.offer-description {
+    text-align: center; 
+}
+
+.ellipse {
+    background-color: #E07A64; 
+    border-radius: 50%;
+    width: 35px; 
+    height: 35px; 
+    position: absolute; 
+    aspect-ratio: 1/1;
+    top: -15px; 
+    left: -15px;
+  }
+
+ 
+.footer { 
+    width: 100vw;
+    height: 120px;
+    background-color: #4E4E4E; 
+}
+
+
+.footer-name {
+    font-size: 16px;
+    font-weight: 700; 
+    color: var(--full-white); 
+    text-align: center;
+    padding-top: 30px; 
+}
+
+.fa-brands { 
+    font-size: 34px;  
+    color: var(--full-white);
+}
+
+.icons-container {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100%; 
+    padding-top: 10px; 
+}
+
+.fa-square-facebook {
+    margin-left: 15px;
+}
+
+
+
+@media screen and (max-width: 767px) and (min-width: 501px)  {
+    .container {
+        width: 90%; 
+    }
+   
+}
+
+@media screen and (min-width: 501px) {
+    .navbar-container {
+        display: flex; 
+        justify-content: space-between;
+        height: 100%;
+        align-items: center;
+    }
+
+    .links-container .navbar-link:last-child {
+        cursor: not-allowed;
+    }
+
+    .links-container .navbar-link {
+        display: initial;
+        margin-left: 35px; 
+        font-weight: 400; 
+        font-size: 16px; 
+        color: #F1F1F1;
+    }
+
+    .introduction-text {
+        top: 29%;
+    }
+}
+
+@media screen and (min-width: 683px) {
+    .break {
+        display: initial; 
+    }
+
+}
+
+@media screen and (min-width: 768px) {
+    .container {
+        width: 92%; 
+    }
+
+    .specialist-title {
+        text-align: initial; 
+    }
+
+    .container .specialist-box {
+        flex-direction: unset; 
+        justify-content: space-between; 
+    }
+    
+    div.specialist-box:nth-of-type(2n) {
+        flex-flow: row-reverse;
+        text-align: right; 
+        padding-right: 0;
+        
+    }
+    
+    div.specialist-description:nth-of-type(2n) {
+        padding-right: 40px; 
+    
+    }
+    
+    
+    div.specialist-box:nth-of-type(2n+1) {
+        flex-flow: row nowrap;
+        padding-left: 0;
+        
+    }
+    
+    div.specialist-description:nth-of-type(2n) {
+        padding-left: 40px; 
+    
+    }
+
+    .flex-row {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;  
+        flex-direction: row;
+        flex-wrap: wrap; 
+        gap: 60px; 
+        
+    }
+
+    .offer-box {
+        width: 80vw; 
+        max-width: 278px; 
+        max-height: 273px; 
+        height: auto;
+        aspect-ratio: 1/1;
+    }
+
+    .ellipse {
+        width: 29px; 
+        height: 29px; 
+        top: -12px; 
+        left: -12px;
+    }
+
+    .company-offer {
+        font-size: 1.9rem; 
+    }
+
+    .footer-container { 
+        display: flex; 
+        justify-content: space-between;
+        align-items: center; 
+        height: 100%;
+    }
+
+    .footer-name {
+        padding-top: 0;
+    }
+
+    .footer {
+        height: 60px; 
+    }
+
+    .introduction-text {
+        top: 33%;
+    }
+    
+}
+    
+
+@media screen and (min-width: 1024px) {
+    .container {
+        width: 960px; 
+    }
+
+    .btn:hover {
+        background-color: white; 
+        color: black; 
+    }
+
+    .flex-row {
+        display: flex; 
+        justify-content: center; 
+        align-items: center;  
+        flex-wrap: wrap; 
+        gap: 70px; 
+    }
+    
+    .offer-box { 
+        width: 200px; 
+        height: 198px; 
+    }
+
+    .offer-box:hover { 
+        transform: scale(1.05);
+    }
+
+    .ellipse {
+        width: 22px; 
+        height: 22px; 
+        top: -10px; 
+        left: -10px; 
+    }
+    .company-offer {
+        font-size: 36px; 
+        text-align: initial; 
+    }
+   
+}
+
+
+
+
