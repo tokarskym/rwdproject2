@@ -332,7 +332,7 @@ div.specialist-box:not(:last-child) .about-specialist {
   }
 
   .btn:hover {
-    background-color: white;
+    background-color: var(--full-white); 
     color: black;
   }
 
